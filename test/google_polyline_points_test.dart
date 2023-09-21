@@ -1,16 +1,14 @@
 import 'dart:developer';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:google_polyline_points/google_polyline_points.dart';
 
-void main() async {
-  await dotenv.load();
+void main() {
   test('get list of coordinates from two geographical positions', () async {
     final polylinePoints = PolylinePoints();
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-      dotenv.env['GOOGLE_MAP_KEY']!,
+      "Your Map Key",
       const LatLngCoordinate(6.5212402, 3.3679965),
       const LatLngCoordinate(6.595680, 3.337030),
       travelMode: TravelMode.driving,

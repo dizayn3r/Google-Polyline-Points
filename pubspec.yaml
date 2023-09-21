@@ -1,6 +1,6 @@
 name: google_polyline_points
 description: A new Flutter package to get polyline points.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/dizayn3r/Google-Polyline-Points.git
 
 environment:
@@ -10,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_dotenv: ^5.1.0
   http: ^1.1.0
 
 dev_dependencies:
@@ -23,9 +22,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  assets:
-    - .env
 
   # To add assets to your package, add an assets section, like this:
   # assets:
